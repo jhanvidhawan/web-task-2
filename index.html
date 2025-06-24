@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taskm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>To-do list</title>
+</head>
+
+<body>
+
+    <div class="clock">
+        <div id="time"></div>
+    </div>
+
+    <div>
+        <h1>Effortlessly manage and take control of your day !</h1>
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <input id="taskInput" type="text" placeholder="Add a new task">
+            <input id="dueDateInput" type="date">
+
+            <select id="categorySelect" class="category">
+                <option value="Undefined">All Categories</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Study">Study</option>
+            </select>
+
+        </div>
+        <div>
+            <div class="controls">
+                <button id="addTaskBtn">Add Task</button>
+                <button id="sortTasksBtn">Sort by Due Date</button>
+            </div>
+            <div class="search">
+                <h4>Search a task :</h4>
+                <input id="searchInput" type="text" placeholder="Search tasks">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="">
+        <ul id="taskList"></ul>
+    </div>
+
+
+</body>
+
+<script src="taskm.js"></script>
+
+</html>

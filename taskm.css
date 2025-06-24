@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(download36.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+  margin-top: 1.2rem;
+  padding: 0 1rem;
+}
+
+.clock {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.controls input,
+.controls select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #7bedff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover {
+  background-color: #003f5c;
+  color: #fff;
+}
+
+.search {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.search h4 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.search input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+  max-width: 300px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  width: 95%;
+  max-width: 800px;
+  margin: 1rem 0;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.task-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.task-name.complete {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.due-date,
+.categoryy {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+li .editbtn,
+li .deletebtn,
+li .completebtn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #7bedff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+li button:hover {
+  background-color: #003f5c;
+  color: #fff;
+}
+
+.scale-down {
+  animation: scaleDown 0.8s ease;
+}
+
+@keyframes scaleDown {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+}
+
+.pop {
+  animation: popAnimation 0.4s ease;
+}
+
+@keyframes popAnimation {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controls input,
+  .controls select,
+  .controls button {
+    width: 100%;
+  }
+
+  li .editbtn,
+  li .deletebtn,
+  li .completebtn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
