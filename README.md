@@ -1,6 +1,6 @@
-# Task Manager Web App
+# To-do List
 A responsive To-Do List built with HTML, CSS, and JavaScript.  
-This app allows users to efficiently manage their daily tasks with features like sorting, editing, marking complete, and real-time searching — all saved locally in the browser. (Open with live server).
+It allows users to efficiently manage their daily tasks with features like sorting, editing, marking complete, and real-time searching — all saved locally in the browser. (Open with live server).
 
 # Features
 - Add tasks with due date and category  
